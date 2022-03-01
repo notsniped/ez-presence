@@ -7,10 +7,16 @@ Since the app is in it's BETA stage, many features are changing very fast and th
 
 ### Steps to Run
 If you are on a GNU/Linux machine, it is recommended to use `git clone` to download the files. Run these commands in terminal.
-```cd /path/to/folder```
-```git clone https://github.com/notsniped/ez-presence/```
+```
+cd /path/to/folder
+```
+```
+git clone https://github.com/notsniped/ez-presence/
+```
 After downloading the repository, locate `app.py` path and run this in terminal.
-```python /path/to/file```
+```
+python /path/to/file
+```
 The GUI should load and you can now set your own rich presence!
 
 # Troubleshooting
