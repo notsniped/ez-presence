@@ -25,5 +25,10 @@ Run `pip install -r requirements.txt` for quick install.
 > Pypresence (pip install pypresence),
 > TKinter (sudo pacman -S tk) or (sudo apt-get tk) on GNU/Linux
 
+# Troubleshooting
+### "Failed to initalize GUI" error
+![](https://github.com/notsniped/ez-presence/blob/main/assets/Screenshot_20220301_110912.png)
+This error may occur in GNU/Linux systems. To fix this issue, try installing `tk` for your specific distro. Information for Debian/Ubuntu and Arch Linux are already provided in the message.
+
 # Known Issues
 `Party size` and `Max party size` don't do anything and will most likely be removed in a later version.
