@@ -21,6 +21,6 @@ The GUI should load and you can now set your own rich presence!
 
 # Requirements/Dependencies
 Run `pip install -r requirements.txt` for quick install.
-> Python 3 or higher
-> Pypresence (pip install pypresence)
+> Python 3 or higher,
+> Pypresence (pip install pypresence),
 > TKinter (sudo pacman -S tk) or (sudo apt-get tk) on GNU/Linux
