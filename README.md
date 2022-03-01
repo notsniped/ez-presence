@@ -3,18 +3,18 @@ EZ Presence is a GUI-Python app which makes it easy to set any custom Discord Ri
 
 # Using the App
 ### How to Run
-Since the app is in it's BETA stage, many features are changing very fast and the code will be kinda raw. It is recommended to run in terminal or command prompt as any errors will appear there.
+Since the app is in it's BETA stage, many features are changing very fast and the code will be kinda raw. It is recommended to run in terminal or command prompt as any runtime errors will appear there.
 
 ### Steps to Run
 If you are on a GNU/Linux machine, it is recommended to use `git clone` to download the files. Run these commands in terminal.
-```
+```shell
 cd /path/to/folder
 ```
-```
+```shell
 git clone https://github.com/notsniped/ez-presence/
 ```
 After downloading the repository, locate `app.py` path and run this in terminal.
-```
+```shell
 python /path/to/file
 ```
 The GUI should load and you can now set your own rich presence!
