@@ -24,3 +24,6 @@ Run `pip install -r requirements.txt` for quick install.
 > Python 3 or higher,
 > Pypresence (pip install pypresence),
 > TKinter (sudo pacman -S tk) or (sudo apt-get tk) on GNU/Linux
+
+# Known Issues
+`Party size` and `Max party size` don't do anything and will most likely be removed in a later version.
