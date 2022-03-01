@@ -28,7 +28,11 @@ Run `pip install -r requirements.txt` for quick install.
 # Troubleshooting
 ### "Failed to initalize GUI" error
 ![](https://github.com/notsniped/ez-presence/blob/main/assets/Screenshot_20220301_110912.png)
+
 This error may occur in GNU/Linux systems. To fix this issue, try installing `tk` for your specific distro. Information for Debian/Ubuntu and Arch Linux are already provided in the message.
+
+### "Python: command not found" error
+This most likely means that you do not have python installed in your system. This can apply to both Windows and GNU/Linux, but it is less common in GNU. If you see this error when trying to run, download the latest version of python from [here](https://www.python.org/downloads/).
 
 # Known Issues
 `Party size` and `Max party size` don't do anything and will most likely be removed in a later version.
