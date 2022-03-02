@@ -29,7 +29,11 @@ Run `pip install -r requirements.txt` for quick install.
 ### "Failed to initalize GUI" error
 ![](https://github.com/notsniped/ez-presence/blob/main/assets/Screenshot_20220301_110912.png)
 
-This error may occur in GNU/Linux systems. To fix this issue, try installing `tk` for your specific distro. Information for Debian/Ubuntu and Arch Linux are already provided in the message.
+This error may occur in GNU/Linux systems. To fix this issue, try installing `tk` for your specific distro. Information for Debian/Ubuntu and Arch Linux are already provided in the message. If that does not solve the problem, try installing tk using pip:
+```shell
+pip install tk
+```
+Now the app should run without issues.
 
 ### "Python: command not found" error
 This most likely means that you do not have python installed in your system. This can apply to both Windows and GNU/Linux, but it is less common in GNU. If you see this error when trying to run, download the latest version of python from [here](https://www.python.org/downloads/).
