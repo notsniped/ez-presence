@@ -5,7 +5,6 @@
 ### ------------------------------------------------------- ###
 
 ## Imports
-
 import os
 try:
     import pypresence
@@ -55,14 +54,6 @@ label6 = Label(root, text='End Timestamp (UNIX):')
 input6 = Entry(root, width=30)
 label6.place(relx=0.1, rely=0.6)
 input6.place(relx=0.5, rely=0.6)
-label7 = Label(root, text='Party Size:')
-input7 = Entry(root, width=30)
-label7.place(relx=0.1, rely=0.7)
-input7.place(relx=0.5, rely=0.7)
-label8 = Label(root, text='Max Party Size:')
-input8 = Entry(root, width=30)
-label8.place(relx=0.1, rely=0.8)
-input8.place(relx=0.5, rely=0.8)
 
 label9 = Label(root, text='beta1.0')
 label9.place(relx=0.03, rely=0.91)
@@ -95,7 +86,6 @@ def startRPC():
             label9['text'] = '\'Small Image Text\' needs to be 2 or longer.'
         else:
             label9['text'] = 'An error occured! Check console for info.'
-        
         
 
 def closeRPC():
