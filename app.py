@@ -105,6 +105,9 @@ btn1 = Button(root, text='Start RPC', command=startRPC)
 btn1.place(relx=0.755, rely=0.9)
 btn2 = Button(root, text='Close RPC', command=closeRPC)
 btn2.place(relx=0.555, rely=0.9)
+btn3 = Button(root, text='Exit', command=exit)
+btn3.place(relx=0.425, rely=0.9)
+
 
 ## Do Not Edit!
 try:
