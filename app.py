@@ -21,7 +21,11 @@ root = Tk()
 root.title('EZPresence - Easy Discord RPC')
 root.geometry('500x500')
 root.resizable(False, False)
+wdir = os.getcwd()
 try:
+    icon = None
+    if os.name == "nt": icon = PhotoImage(file = f"{wdir}\\icons\\500x500.png")
+    elif os.name == "posix": icon = PhotoImage(file = "icons/500x500.png")
     icon = PhotoImage(file = "~/Desktop/EZ_presence/icons/500x500.png")
     root.iconphoto(False, icon)
 except:
