@@ -60,7 +60,7 @@ input6 = Entry(root, width=30)
 label6.place(relx=0.1, rely=0.6)
 input6.place(relx=0.5, rely=0.6)
 
-label9 = Label(root, text='beta1.0')
+label9 = Label(root, text='beta1.3')
 label9.place(relx=0.03, rely=0.91)
 
 ## Functions and Classes
