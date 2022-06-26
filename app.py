@@ -27,6 +27,7 @@ try:
 except:
     print('WARN: Unable to load \'/icons/500x500.png\', running without icons.')
 rpc = pypresence.Presence(947710719770632234, pipe=0, loop=None, handler=None)
+rpcstarted = False
 #root.configure(background='#121212')  [Uncomment for Dark Mode (Later)!]
 
 ## Tk Design
@@ -77,6 +78,7 @@ def startRPC():
         rpc.update(state=str(i2), details=str(i1), start=i5, end=i6, large_text=str(i3), small_text=str(i4)) #large_text=str(i3), small_text=str(i4)#
         label9['fg'] = 'green'
         label9['text'] = 'Discord RPC started!'
+        rpcstarted = True
     except Exception as e:
         label9['fg'] = '#FF0000'
         print(e)
@@ -92,12 +94,25 @@ def closeRPC():
     rpc.close()
     label9['fg'] = 'green'
     label9['text'] = 'Discord RPC closed.'
+    rpcstarted = False
+
+def exit():
+    print("Exiting EZPresence")
+    root.destroy()
 
 ## Tk Design (Continuation XD)
 btn1 = Button(root, text='Start RPC', command=startRPC)
 btn1.place(relx=0.755, rely=0.9)
 btn2 = Button(root, text='Close RPC', command=closeRPC)
 btn2.place(relx=0.555, rely=0.9)
+btn3 = Button(root, text='Exit', command=exit)
+btn3.place(relx=0.425, rely=0.9)
+
 
 ## Do Not Edit!
-root.mainloop()
+try:
+    root.mainloop()
+except KeyboardInterrupt:
+    print("Safely cleaning-up runtime environment...")
+    if rpcstarted: rpc.close()
+    exit()
