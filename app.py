@@ -93,6 +93,10 @@ def closeRPC():
     label9['fg'] = 'green'
     label9['text'] = 'Discord RPC closed.'
 
+def exit():
+    print("Exiting EZPresence")
+    root.destroy()
+
 ## Tk Design (Continuation XD)
 btn1 = Button(root, text='Start RPC', command=startRPC)
 btn1.place(relx=0.755, rely=0.9)
@@ -100,4 +104,9 @@ btn2 = Button(root, text='Close RPC', command=closeRPC)
 btn2.place(relx=0.555, rely=0.9)
 
 ## Do Not Edit!
-root.mainloop()
+try:
+    root.mainloop()
+except KeyboardInterrupt:
+    print("Safely cleaning-up runtime environment...")
+    rpc.close()
+    exit()
